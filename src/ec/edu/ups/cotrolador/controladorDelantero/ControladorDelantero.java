@@ -6,6 +6,7 @@
 package ec.edu.ups.cotrolador.controladorDelantero;
 
 import ec.edu.ups.clases.Delantero;
+import ec.edu.ups.clases.Jugador;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,14 +15,18 @@ import java.util.List;
  * @author Usuario
  */
 public class ControladorDelantero {
-        private List<Delantero> lista;
+    private int contador=0;
+    private List<Delantero> lista;
 
-    public ControladorDelantero() {
+    public ControladorDelantero( ) {
+       
         lista = new ArrayList<>();
     }
     
     public void create(Delantero objeto){
-        lista.add(objeto);
+        lista.set(contador, objeto);
+        contador = contador+1;
+       // lista.add(objeto);
     }
     
     public Delantero read(int codigo){

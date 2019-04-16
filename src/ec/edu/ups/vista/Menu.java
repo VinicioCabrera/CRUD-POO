@@ -6,6 +6,7 @@
 package ec.edu.ups.vista;
 
 import ec.edu.ups.clases.Delantero;
+import ec.edu.ups.clases.Jugador;
 import ec.edu.ups.cotrolador.controladorDelantero.ControladorDelantero;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -43,6 +44,7 @@ public class Menu {
                 case 1: 
                     //opcion para el crud aire acondicionado
                     do{
+                        GregorianCalendar fecha1=new GregorianCalendar(2009, 5, 2);
                         System.out.println("----MENU Delantero----");
                         System.out.println("1. Create");
                         System.out.println("2. Read");
@@ -53,6 +55,7 @@ public class Menu {
                         MenuDelantero = entrada.nextInt();
                         
                         switch(MenuDelantero){
+                            
                             case 1:
                                 //create
                                 //pide todos los datos por teclado
@@ -61,7 +64,7 @@ public class Menu {
                             String cedu,posi,nom,car,ape;
                             int porTar,saAr,guCo,codiJuga,edad;
                             double longMa;
-                            Date feCon;
+                            
                             
                             
                             System.out.print("Ingrese Porcentaje targetas: ");
@@ -76,11 +79,6 @@ public class Menu {
                             codiJuga=entrada.nextInt();
                             System.out.print("Ingresar Cedula ");
                             cedu=entrada.next();
-                     
-                            System.out.println("Fecha: ");
-                            
-                            GregorianCalendar fecha=new GregorianCalendar(2009, 5, 2);
-                            feCon=fecha.getGregorianChange();
                             System.out.print("Ingresar posicion:");
                             posi=entrada.next();
                             System.out.print("Ingresar Nombre:");
@@ -91,9 +89,10 @@ public class Menu {
                             ape=entrada.next();
                             System.out.print("Ingresar Edad ");
                             edad=entrada.nextInt();
+                            System.out.println("Fecha: ");
                             
-                            Delantero dela=new Delantero(porTar, saAr, MenuAbonado, longMa, codiJuga, cedu, feCon, posi, nom, car, ape, edad);
-                            controladorDelantero.create(dela);
+                            Delantero de=new Delantero(porTar, saAr, MenuAbonado, longMa, codiJuga, cedu, fecha1.getTime(), posi, nom, car, ape, edad);
+                            controladorDelantero.create(de);
                                 break;
                             case 2:
                                 //read
@@ -122,11 +121,6 @@ public class Menu {
                             codiJuga=entrada.nextInt();
                             System.out.print("Ingresar Cedula ");
                             cedu=entrada.next();
-                     
-                            System.out.print("Fecha: ");
-                            GregorianCalendar fecha2=new GregorianCalendar(2010, 0, 1);
-                            feCon=fecha2.getGregorianChange();
-                            
                             System.out.print("Ingresar posicion:");
                             posi=entrada.next();
                             System.out.print("Ingresar Nombre:");
@@ -138,7 +132,7 @@ public class Menu {
                             System.out.print("Ingresar Edad ");
                             edad=entrada.nextInt();
                             
-                            Delantero delantero=new Delantero(porTar, saAr, MenuAbonado, longMa, codiJuga, cedu, feCon, posi, nom, car, ape, edad);
+                            Delantero delantero=new Delantero(porTar, saAr, MenuAbonado, longMa, codiJuga, cedu, fecha1.getTime(), posi, nom, car, ape, edad);
                             controladorDelantero.update(delantero);
                             break;
                                 
@@ -146,7 +140,7 @@ public class Menu {
                                 //delete
                                 //pide el codigo por teclado
                                 //llama al metodo delete del controlador
-                            System.out.println("ingrese el codigo a verificar: ");
+                            System.out.println("Ingrese el codigo a verificar: ");
                             codiJuga=entrada.nextInt();
                             controladorDelantero.delete(codiJuga);
                                 break;

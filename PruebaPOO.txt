@@ -38,9 +38,9 @@ public class Prueba  {
     Arquero arq=new Arquero(20, 31, 2 , 50, 159, "0102469780",fechacont1, "Arquero", "Juan", "Arquero Titular", "Calle", 24); 
     Date fechaAbo=new Date(2001, 4, 10);
     Date fechaSoc1=new Date(1999, 2, 23);
-    Abonado abo=new Abonado(123, 25.2, 1478, fechaAbo, "Directo" , 2045, "tres aÃ±os", fechaSoc1,"Matias", "ventas", "Jimbo", 40);
+    Abonado abo=new Abonado(123, 25.2, 1478, fechaAbo, "Directo" , 2045, "tres años", fechaSoc1,"Matias", "ventas", "Jimbo", 40);
     Date fechaSoc2=new Date(2000, 5, 9);
-    Auspisiante aus=new Auspisiante(17895, "Pilsenar", 20000.12, "Iniformes","temporal", 3600,"cuatro aÃ±os" , fechaSoc2,"Esteban", "Gerente","Encalada",36);
+    Auspisiante aus=new Auspisiante(17895, "Pilsenar", 20000.12, "Iniformes","temporal", 3600,"cuatro años" , fechaSoc2,"Esteban", "Gerente","Encalada",36);
      Date fechacont2=new Date(1999, 5, 29);
     Delantero del=new Delantero(1, 2, 12, 50.12, 1021, "0106978457", fechacont2, "DelanteroIzquierdo", "Mario","Delantero Titular", "Carrion", 28);
     

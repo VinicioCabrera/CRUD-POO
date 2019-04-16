@@ -8,8 +8,10 @@ package ec.edu.ups.clases;
 import java.util.Date;
 
 /**
- *
- * @author Usuario
+ * @version 2.0
+ * @since 2019
+ * @author Vinicio campoverde
+ * @see http://ups.edu.ec
  */
 public abstract class Socio extends Persona {
  private String tipo;
@@ -17,7 +19,8 @@ public abstract class Socio extends Persona {
  private String tiempoSocio;
  private Date fechaSocio;  
 
-    public Socio() {
+    
+ public Socio() {
     }
  
 

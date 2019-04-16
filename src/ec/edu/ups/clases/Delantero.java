@@ -9,14 +9,20 @@ import ec.edu.ups.interfaz.Interfaz;
 import java.util.Date;
 
 /**
- *
- * @author Usuario
+ * @version 2.0
+ * @since 2019
+ * @author Vinicio campoverde
+ * @see http://ups.edu.ec
  */
 public final class Delantero extends Jugador implements Interfaz {
 private int porcentajeTapadas;
 private int saqueArco;
 private int GuantesColocados;
 private double longitudDeMano;
+
+    public Delantero() {
+    }
+
 
     public Delantero(int porcentajeTapadas, int saqueArco, int GuantesColocados, double longitudDeMano, int codigoJgador, String cedula, Date fechaContratacion, String Posicion) {
         super(codigoJgador, cedula, fechaContratacion, Posicion);

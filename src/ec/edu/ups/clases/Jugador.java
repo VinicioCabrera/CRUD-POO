@@ -6,8 +6,10 @@
 package ec.edu.ups.clases;
 import java.util.Date;
 /**
- *
- * @author Usuario
+* @version 2.0
+ * @since 2019
+ * @author Vinicio campoverde
+ * @see http://ups.edu.ec
  */
 public abstract class Jugador extends Persona {
 private int codigoJgador;

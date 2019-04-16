@@ -7,8 +7,10 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaz.Interfaz;
 import java.util.Date;
 /**
- *
- * @author Usuario
+* @version 2.0
+ * @since 2019
+ * @author Vinicio campoverde
+ * @see http://ups.edu.ec
  */
 public final class Abonado extends Socio implements Interfaz {
 private int codigoAbonado;
